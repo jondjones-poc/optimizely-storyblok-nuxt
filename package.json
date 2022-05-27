@@ -1,0 +1,38 @@
+{
+  "name": "optimizely-nuxt-example",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "netlify": "npm run build && npm run generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "prepare": "husky install",
+    "lint": "npm run lint:js"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint"
+  },
+  "dependencies": {
+    "@marvr/storyblok-rich-text-vue-renderer": "^2.0.1",
+    "@optimizely/optimizely-sdk": "^4.9.1",
+    "@vue/composition-api": "^1.6.1",
+    "axios": "^0.27.2",
+    "core-js": "^3.22.6",
+    "nuxt": "^2.15.7",
+    "storyblok-nuxt": "^2.0.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "@nuxtjs/eslint-config": "^10.0.0",
+    "@nuxtjs/eslint-module": "^3.1.0",
+    "@nuxtjs/tailwindcss": "^5.0.4",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "postcss": "^8.4.14",
+    "prettier": "^2.6.2"
+  }
+}

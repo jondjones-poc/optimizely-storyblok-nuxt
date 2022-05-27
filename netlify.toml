@@ -1,0 +1,5 @@
+[build]
+  # this is the dir that will be published
+  publish = "dist"
+  # command to setup your SPA environment
+  command = "npm run generate"
